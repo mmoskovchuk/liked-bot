@@ -1,0 +1,15 @@
+{
+  "manifest_version" : 2,
+  "name": "BadooLike",
+  "version": "1.1.1",
+  "icons": { "128": "icon.png" },
+  "description": "Likes badoo",
+  "permissions": ["tabs", "https://badoo.com/encounters"],
+  "content_scripts": [
+    {
+      "matches": ["https://badoo.com/encounters"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
